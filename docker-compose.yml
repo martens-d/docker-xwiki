@@ -1,11 +1,9 @@
-version: '3.7'
-
 services:
   xwiki:
     image: xwiki:lts-mariadb-tomcat
     restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "8088:8080"
     environment:
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
